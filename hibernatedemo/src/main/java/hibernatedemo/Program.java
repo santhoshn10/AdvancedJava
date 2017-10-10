@@ -12,7 +12,7 @@ public class Program {
 		session.beginTransaction();
 		
 		User user = new User();
-		user.setName("raj");
+		user.setName("raju");
 		user.setGoal(250);
 		session.save(user);
 		
