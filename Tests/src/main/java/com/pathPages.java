@@ -1,6 +1,5 @@
 package com;
 
-import org.openqa.selenium.By;
 
 public class pathPages {
 
@@ -12,12 +11,16 @@ public class pathPages {
 		Browser.goTo(Url);		
 	}
 
-	public void goToJavaPathPages() {
-		
-		Browser.driver.findElement(By.xpath("//div[@id='pathContent']/div[67]/a/div/div[2]")).click();
-		
-	}
+    public PathPage getPathPage(String page){
+    	switch (page) {
+		case "Java":
+			
+			return Pages.javaPathPage();
 
+		}
+    	return null;
+    }
+    
 	public Boolean isAt() {
 		return Browser.title().equals(title);
 	}

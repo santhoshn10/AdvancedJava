@@ -2,7 +2,6 @@ package com;
 
 import static org.junit.Assert.assertTrue;
 
-import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.Test;
@@ -21,8 +20,9 @@ public class UnitTest {
 	public void canGoToJavaPathPage(){
 		
 		Pages.pathPages().goTo();
-		Pages.pathPages().goToJavaPathPages();
-	    Assert.assertTrue(Pages.pathPages().isAt());
+		PathPage pathPage=Pages.pathPages().getPathPage("Java");
+		pathPage.goTo();
+	    Assert.assertTrue(pathPage.isAtPathPage("Java"));
 	}
 	
 	
