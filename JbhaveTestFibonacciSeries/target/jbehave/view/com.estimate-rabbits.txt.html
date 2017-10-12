@@ -1,0 +1,226 @@
+<html>
+<head>
+<title>com.estimate-rabbits</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+ 
+<script type="syntaxhighlighter" class="brush: txt"><![CDATA[
+
+(com/estimate-rabbits.story)
+Scenario: Estimate the number of rabbits
+Examples:
+Given the number of <months>
+When the number of rabbits are estimated
+Then the number of rabbits for each month will be <expected>
+
+|months|expected|
+|1|2|
+|2|2, 2|
+|3|2, 2, 4|
+|4|2, 2, 4, 6|
+|5|2, 2, 4, 6, 10|
+|6|2, 2, 4, 6, 10, 16|
+|7|2, 2, 4, 6, 10, 16, 26|
+|8|2, 2, 4, 6, 10, 16, 26, 42|
+|9|2, 2, 4, 6, 10, 16, 26, 42, 68|
+|10|2, 2, 4, 6, 10, 16, 26, 42, 68, 110|
+|11|2, 2, 4, 6, 10, 16, 26, 42, 68, 110, 178|
+|12|2, 2, 4, 6, 10, 16, 26, 42, 68, 110, 178, 288|
+|13|2, 2, 4, 6, 10, 16, 26, 42, 68, 110, 178, 288, 466|
+
+Example: {months=1, expected=2}
+Given the number of 1
+When the number of rabbits are estimated
+Then the number of rabbits for each month will be 2
+
+Example: {months=2, expected=2, 2}
+Given the number of 2
+When the number of rabbits are estimated
+Then the number of rabbits for each month will be 2, 2
+
+Example: {months=3, expected=2, 2, 4}
+Given the number of 3
+When the number of rabbits are estimated
+Then the number of rabbits for each month will be 2, 2, 4
+
+Example: {months=4, expected=2, 2, 4, 6}
+Given the number of 4
+When the number of rabbits are estimated
+Then the number of rabbits for each month will be 2, 2, 4, 6
+
+Example: {months=5, expected=2, 2, 4, 6, 10}
+Given the number of 5
+When the number of rabbits are estimated
+Then the number of rabbits for each month will be 2, 2, 4, 6, 10
+
+Example: {months=6, expected=2, 2, 4, 6, 10, 16}
+Given the number of 6
+When the number of rabbits are estimated
+Then the number of rabbits for each month will be 2, 2, 4, 6, 10, 16
+
+Example: {months=7, expected=2, 2, 4, 6, 10, 16, 26}
+Given the number of 7
+When the number of rabbits are estimated
+Then the number of rabbits for each month will be 2, 2, 4, 6, 10, 16, 26
+
+Example: {months=8, expected=2, 2, 4, 6, 10, 16, 26, 42}
+Given the number of 8
+When the number of rabbits are estimated
+Then the number of rabbits for each month will be 2, 2, 4, 6, 10, 16, 26, 42
+
+Example: {months=9, expected=2, 2, 4, 6, 10, 16, 26, 42, 68}
+Given the number of 9
+When the number of rabbits are estimated
+Then the number of rabbits for each month will be 2, 2, 4, 6, 10, 16, 26, 42, 68
+
+Example: {months=10, expected=2, 2, 4, 6, 10, 16, 26, 42, 68, 110}
+Given the number of 10
+When the number of rabbits are estimated
+Then the number of rabbits for each month will be 2, 2, 4, 6, 10, 16, 26, 42, 68, 110
+
+Example: {months=11, expected=2, 2, 4, 6, 10, 16, 26, 42, 68, 110, 178}
+Given the number of 11
+When the number of rabbits are estimated
+Then the number of rabbits for each month will be 2, 2, 4, 6, 10, 16, 26, 42, 68, 110, 178
+
+Example: {months=12, expected=2, 2, 4, 6, 10, 16, 26, 42, 68, 110, 178, 288}
+Given the number of 12
+When the number of rabbits are estimated
+Then the number of rabbits for each month will be 2, 2, 4, 6, 10, 16, 26, 42, 68, 110, 178, 288
+
+Example: {months=13, expected=2, 2, 4, 6, 10, 16, 26, 42, 68, 110, 178, 288, 466}
+Given the number of 13
+When the number of rabbits are estimated
+Then the number of rabbits for each month will be 2, 2, 4, 6, 10, 16, 26, 42, 68, 110, 178, 288, 466
+
+
+Scenario: Sort the rabbit list in descending order
+Examples:
+Given the number of <months>
+When the number of rabbits are estimated
+And the list is sorted in descending order
+Then the number of rabbits for each month will be <expected>
+
+|months|expected|
+|1|2|
+|2|2, 2|
+|3|4, 2, 2|
+|4|6, 4, 2, 2|
+|5|10, 6, 4, 2, 2|
+|6|16, 10, 6, 4, 2, 2|
+|7|26, 16, 10, 6, 4, 2, 2|
+|8|42, 26, 16, 10, 6, 4, 2, 2|
+|9|68, 42, 26, 16, 10, 6, 4, 2, 2|
+|10|110, 68, 42, 26, 16, 10, 6, 4, 2, 2|
+|11|178, 110, 68, 42, 26, 16, 10, 6, 4, 2, 2|
+|12|288, 178, 110, 68, 42, 26, 16, 10, 6, 4, 2, 2|
+|13|466, 288, 178, 110, 68, 42, 26, 16, 10, 6, 4, 2, 2|
+
+Example: {months=1, expected=2}
+Given the number of 1
+When the number of rabbits are estimated
+And the list is sorted in descending order
+Then the number of rabbits for each month will be 2
+
+Example: {months=2, expected=2, 2}
+Given the number of 2
+When the number of rabbits are estimated
+And the list is sorted in descending order
+Then the number of rabbits for each month will be 2, 2
+
+Example: {months=3, expected=4, 2, 2}
+Given the number of 3
+When the number of rabbits are estimated
+And the list is sorted in descending order
+Then the number of rabbits for each month will be 4, 2, 2
+
+Example: {months=4, expected=6, 4, 2, 2}
+Given the number of 4
+When the number of rabbits are estimated
+And the list is sorted in descending order
+Then the number of rabbits for each month will be 6, 4, 2, 2
+
+Example: {months=5, expected=10, 6, 4, 2, 2}
+Given the number of 5
+When the number of rabbits are estimated
+And the list is sorted in descending order
+Then the number of rabbits for each month will be 10, 6, 4, 2, 2
+
+Example: {months=6, expected=16, 10, 6, 4, 2, 2}
+Given the number of 6
+When the number of rabbits are estimated
+And the list is sorted in descending order
+Then the number of rabbits for each month will be 16, 10, 6, 4, 2, 2
+
+Example: {months=7, expected=26, 16, 10, 6, 4, 2, 2}
+Given the number of 7
+When the number of rabbits are estimated
+And the list is sorted in descending order
+Then the number of rabbits for each month will be 26, 16, 10, 6, 4, 2, 2
+
+Example: {months=8, expected=42, 26, 16, 10, 6, 4, 2, 2}
+Given the number of 8
+When the number of rabbits are estimated
+And the list is sorted in descending order
+Then the number of rabbits for each month will be 42, 26, 16, 10, 6, 4, 2, 2
+
+Example: {months=9, expected=68, 42, 26, 16, 10, 6, 4, 2, 2}
+Given the number of 9
+When the number of rabbits are estimated
+And the list is sorted in descending order
+Then the number of rabbits for each month will be 68, 42, 26, 16, 10, 6, 4, 2, 2
+
+Example: {months=10, expected=110, 68, 42, 26, 16, 10, 6, 4, 2, 2}
+Given the number of 10
+When the number of rabbits are estimated
+And the list is sorted in descending order
+Then the number of rabbits for each month will be 110, 68, 42, 26, 16, 10, 6, 4, 2, 2
+
+Example: {months=11, expected=178, 110, 68, 42, 26, 16, 10, 6, 4, 2, 2}
+Given the number of 11
+When the number of rabbits are estimated
+And the list is sorted in descending order
+Then the number of rabbits for each month will be 178, 110, 68, 42, 26, 16, 10, 6, 4, 2, 2
+
+Example: {months=12, expected=288, 178, 110, 68, 42, 26, 16, 10, 6, 4, 2, 2}
+Given the number of 12
+When the number of rabbits are estimated
+And the list is sorted in descending order
+Then the number of rabbits for each month will be 288, 178, 110, 68, 42, 26, 16, 10, 6, 4, 2, 2
+
+Example: {months=13, expected=466, 288, 178, 110, 68, 42, 26, 16, 10, 6, 4, 2, 2}
+Given the number of 13
+When the number of rabbits are estimated
+And the list is sorted in descending order
+Then the number of rabbits for each month will be 466, 288, 178, 110, 68, 42, 26, 16, 10, 6, 4, 2, 2
+
+
+
+
+]]></script>
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

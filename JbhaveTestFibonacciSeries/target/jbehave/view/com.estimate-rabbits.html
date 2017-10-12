@@ -1,0 +1,266 @@
+<html>
+<head>
+<title>com.estimate-rabbits</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+<div class="story">
+<h1></h1>
+<div class="path">com/estimate-rabbits.story</div>
+<div class="scenario">
+<h2>Scenario: Estimate the number of rabbits</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given the number of &lt;months&gt;</div>
+<div class="step">When the number of rabbits are estimated</div>
+<div class="step">Then the number of rabbits for each month will be &lt;expected&gt;</div>
+<table>
+<thead>
+<tr>
+<th>months</th><th>expected</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td><td>2</td></tr>
+<tr>
+<td>2</td><td>2, 2</td></tr>
+<tr>
+<td>3</td><td>2, 2, 4</td></tr>
+<tr>
+<td>4</td><td>2, 2, 4, 6</td></tr>
+<tr>
+<td>5</td><td>2, 2, 4, 6, 10</td></tr>
+<tr>
+<td>6</td><td>2, 2, 4, 6, 10, 16</td></tr>
+<tr>
+<td>7</td><td>2, 2, 4, 6, 10, 16, 26</td></tr>
+<tr>
+<td>8</td><td>2, 2, 4, 6, 10, 16, 26, 42</td></tr>
+<tr>
+<td>9</td><td>2, 2, 4, 6, 10, 16, 26, 42, 68</td></tr>
+<tr>
+<td>10</td><td>2, 2, 4, 6, 10, 16, 26, 42, 68, 110</td></tr>
+<tr>
+<td>11</td><td>2, 2, 4, 6, 10, 16, 26, 42, 68, 110, 178</td></tr>
+<tr>
+<td>12</td><td>2, 2, 4, 6, 10, 16, 26, 42, 68, 110, 178, 288</td></tr>
+<tr>
+<td>13</td><td>2, 2, 4, 6, 10, 16, 26, 42, 68, 110, 178, 288, 466</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {months=1, expected=2}</h3>
+<div class="step successful">Given the number of <span class="step parameter">1</span></div>
+<div class="step successful">When the number of rabbits are estimated</div>
+<div class="step successful">Then the number of rabbits for each month will be <span class="step parameter">2</span></div>
+
+<h3 class="example">Example: {months=2, expected=2, 2}</h3>
+<div class="step successful">Given the number of <span class="step parameter">2</span></div>
+<div class="step successful">When the number of rabbits are estimated</div>
+<div class="step successful">Then the number of rabbits for each month will be <span class="step parameter">2, 2</span></div>
+
+<h3 class="example">Example: {months=3, expected=2, 2, 4}</h3>
+<div class="step successful">Given the number of <span class="step parameter">3</span></div>
+<div class="step successful">When the number of rabbits are estimated</div>
+<div class="step successful">Then the number of rabbits for each month will be <span class="step parameter">2, 2, 4</span></div>
+
+<h3 class="example">Example: {months=4, expected=2, 2, 4, 6}</h3>
+<div class="step successful">Given the number of <span class="step parameter">4</span></div>
+<div class="step successful">When the number of rabbits are estimated</div>
+<div class="step successful">Then the number of rabbits for each month will be <span class="step parameter">2, 2, 4, 6</span></div>
+
+<h3 class="example">Example: {months=5, expected=2, 2, 4, 6, 10}</h3>
+<div class="step successful">Given the number of <span class="step parameter">5</span></div>
+<div class="step successful">When the number of rabbits are estimated</div>
+<div class="step successful">Then the number of rabbits for each month will be <span class="step parameter">2, 2, 4, 6, 10</span></div>
+
+<h3 class="example">Example: {months=6, expected=2, 2, 4, 6, 10, 16}</h3>
+<div class="step successful">Given the number of <span class="step parameter">6</span></div>
+<div class="step successful">When the number of rabbits are estimated</div>
+<div class="step successful">Then the number of rabbits for each month will be <span class="step parameter">2, 2, 4, 6, 10, 16</span></div>
+
+<h3 class="example">Example: {months=7, expected=2, 2, 4, 6, 10, 16, 26}</h3>
+<div class="step successful">Given the number of <span class="step parameter">7</span></div>
+<div class="step successful">When the number of rabbits are estimated</div>
+<div class="step successful">Then the number of rabbits for each month will be <span class="step parameter">2, 2, 4, 6, 10, 16, 26</span></div>
+
+<h3 class="example">Example: {months=8, expected=2, 2, 4, 6, 10, 16, 26, 42}</h3>
+<div class="step successful">Given the number of <span class="step parameter">8</span></div>
+<div class="step successful">When the number of rabbits are estimated</div>
+<div class="step successful">Then the number of rabbits for each month will be <span class="step parameter">2, 2, 4, 6, 10, 16, 26, 42</span></div>
+
+<h3 class="example">Example: {months=9, expected=2, 2, 4, 6, 10, 16, 26, 42, 68}</h3>
+<div class="step successful">Given the number of <span class="step parameter">9</span></div>
+<div class="step successful">When the number of rabbits are estimated</div>
+<div class="step successful">Then the number of rabbits for each month will be <span class="step parameter">2, 2, 4, 6, 10, 16, 26, 42, 68</span></div>
+
+<h3 class="example">Example: {months=10, expected=2, 2, 4, 6, 10, 16, 26, 42, 68, 110}</h3>
+<div class="step successful">Given the number of <span class="step parameter">10</span></div>
+<div class="step successful">When the number of rabbits are estimated</div>
+<div class="step successful">Then the number of rabbits for each month will be <span class="step parameter">2, 2, 4, 6, 10, 16, 26, 42, 68, 110</span></div>
+
+<h3 class="example">Example: {months=11, expected=2, 2, 4, 6, 10, 16, 26, 42, 68, 110, 178}</h3>
+<div class="step successful">Given the number of <span class="step parameter">11</span></div>
+<div class="step successful">When the number of rabbits are estimated</div>
+<div class="step successful">Then the number of rabbits for each month will be <span class="step parameter">2, 2, 4, 6, 10, 16, 26, 42, 68, 110, 178</span></div>
+
+<h3 class="example">Example: {months=12, expected=2, 2, 4, 6, 10, 16, 26, 42, 68, 110, 178, 288}</h3>
+<div class="step successful">Given the number of <span class="step parameter">12</span></div>
+<div class="step successful">When the number of rabbits are estimated</div>
+<div class="step successful">Then the number of rabbits for each month will be <span class="step parameter">2, 2, 4, 6, 10, 16, 26, 42, 68, 110, 178, 288</span></div>
+
+<h3 class="example">Example: {months=13, expected=2, 2, 4, 6, 10, 16, 26, 42, 68, 110, 178, 288, 466}</h3>
+<div class="step successful">Given the number of <span class="step parameter">13</span></div>
+<div class="step successful">When the number of rabbits are estimated</div>
+<div class="step successful">Then the number of rabbits for each month will be <span class="step parameter">2, 2, 4, 6, 10, 16, 26, 42, 68, 110, 178, 288, 466</span></div>
+</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Sort the rabbit list in descending order</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given the number of &lt;months&gt;</div>
+<div class="step">When the number of rabbits are estimated</div>
+<div class="step">And the list is sorted in descending order</div>
+<div class="step">Then the number of rabbits for each month will be &lt;expected&gt;</div>
+<table>
+<thead>
+<tr>
+<th>months</th><th>expected</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td><td>2</td></tr>
+<tr>
+<td>2</td><td>2, 2</td></tr>
+<tr>
+<td>3</td><td>4, 2, 2</td></tr>
+<tr>
+<td>4</td><td>6, 4, 2, 2</td></tr>
+<tr>
+<td>5</td><td>10, 6, 4, 2, 2</td></tr>
+<tr>
+<td>6</td><td>16, 10, 6, 4, 2, 2</td></tr>
+<tr>
+<td>7</td><td>26, 16, 10, 6, 4, 2, 2</td></tr>
+<tr>
+<td>8</td><td>42, 26, 16, 10, 6, 4, 2, 2</td></tr>
+<tr>
+<td>9</td><td>68, 42, 26, 16, 10, 6, 4, 2, 2</td></tr>
+<tr>
+<td>10</td><td>110, 68, 42, 26, 16, 10, 6, 4, 2, 2</td></tr>
+<tr>
+<td>11</td><td>178, 110, 68, 42, 26, 16, 10, 6, 4, 2, 2</td></tr>
+<tr>
+<td>12</td><td>288, 178, 110, 68, 42, 26, 16, 10, 6, 4, 2, 2</td></tr>
+<tr>
+<td>13</td><td>466, 288, 178, 110, 68, 42, 26, 16, 10, 6, 4, 2, 2</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {months=1, expected=2}</h3>
+<div class="step successful">Given the number of <span class="step parameter">1</span></div>
+<div class="step successful">When the number of rabbits are estimated</div>
+<div class="step successful">And the list is sorted in descending order</div>
+<div class="step successful">Then the number of rabbits for each month will be <span class="step parameter">2</span></div>
+
+<h3 class="example">Example: {months=2, expected=2, 2}</h3>
+<div class="step successful">Given the number of <span class="step parameter">2</span></div>
+<div class="step successful">When the number of rabbits are estimated</div>
+<div class="step successful">And the list is sorted in descending order</div>
+<div class="step successful">Then the number of rabbits for each month will be <span class="step parameter">2, 2</span></div>
+
+<h3 class="example">Example: {months=3, expected=4, 2, 2}</h3>
+<div class="step successful">Given the number of <span class="step parameter">3</span></div>
+<div class="step successful">When the number of rabbits are estimated</div>
+<div class="step successful">And the list is sorted in descending order</div>
+<div class="step successful">Then the number of rabbits for each month will be <span class="step parameter">4, 2, 2</span></div>
+
+<h3 class="example">Example: {months=4, expected=6, 4, 2, 2}</h3>
+<div class="step successful">Given the number of <span class="step parameter">4</span></div>
+<div class="step successful">When the number of rabbits are estimated</div>
+<div class="step successful">And the list is sorted in descending order</div>
+<div class="step successful">Then the number of rabbits for each month will be <span class="step parameter">6, 4, 2, 2</span></div>
+
+<h3 class="example">Example: {months=5, expected=10, 6, 4, 2, 2}</h3>
+<div class="step successful">Given the number of <span class="step parameter">5</span></div>
+<div class="step successful">When the number of rabbits are estimated</div>
+<div class="step successful">And the list is sorted in descending order</div>
+<div class="step successful">Then the number of rabbits for each month will be <span class="step parameter">10, 6, 4, 2, 2</span></div>
+
+<h3 class="example">Example: {months=6, expected=16, 10, 6, 4, 2, 2}</h3>
+<div class="step successful">Given the number of <span class="step parameter">6</span></div>
+<div class="step successful">When the number of rabbits are estimated</div>
+<div class="step successful">And the list is sorted in descending order</div>
+<div class="step successful">Then the number of rabbits for each month will be <span class="step parameter">16, 10, 6, 4, 2, 2</span></div>
+
+<h3 class="example">Example: {months=7, expected=26, 16, 10, 6, 4, 2, 2}</h3>
+<div class="step successful">Given the number of <span class="step parameter">7</span></div>
+<div class="step successful">When the number of rabbits are estimated</div>
+<div class="step successful">And the list is sorted in descending order</div>
+<div class="step successful">Then the number of rabbits for each month will be <span class="step parameter">26, 16, 10, 6, 4, 2, 2</span></div>
+
+<h3 class="example">Example: {months=8, expected=42, 26, 16, 10, 6, 4, 2, 2}</h3>
+<div class="step successful">Given the number of <span class="step parameter">8</span></div>
+<div class="step successful">When the number of rabbits are estimated</div>
+<div class="step successful">And the list is sorted in descending order</div>
+<div class="step successful">Then the number of rabbits for each month will be <span class="step parameter">42, 26, 16, 10, 6, 4, 2, 2</span></div>
+
+<h3 class="example">Example: {months=9, expected=68, 42, 26, 16, 10, 6, 4, 2, 2}</h3>
+<div class="step successful">Given the number of <span class="step parameter">9</span></div>
+<div class="step successful">When the number of rabbits are estimated</div>
+<div class="step successful">And the list is sorted in descending order</div>
+<div class="step successful">Then the number of rabbits for each month will be <span class="step parameter">68, 42, 26, 16, 10, 6, 4, 2, 2</span></div>
+
+<h3 class="example">Example: {months=10, expected=110, 68, 42, 26, 16, 10, 6, 4, 2, 2}</h3>
+<div class="step successful">Given the number of <span class="step parameter">10</span></div>
+<div class="step successful">When the number of rabbits are estimated</div>
+<div class="step successful">And the list is sorted in descending order</div>
+<div class="step successful">Then the number of rabbits for each month will be <span class="step parameter">110, 68, 42, 26, 16, 10, 6, 4, 2, 2</span></div>
+
+<h3 class="example">Example: {months=11, expected=178, 110, 68, 42, 26, 16, 10, 6, 4, 2, 2}</h3>
+<div class="step successful">Given the number of <span class="step parameter">11</span></div>
+<div class="step successful">When the number of rabbits are estimated</div>
+<div class="step successful">And the list is sorted in descending order</div>
+<div class="step successful">Then the number of rabbits for each month will be <span class="step parameter">178, 110, 68, 42, 26, 16, 10, 6, 4, 2, 2</span></div>
+
+<h3 class="example">Example: {months=12, expected=288, 178, 110, 68, 42, 26, 16, 10, 6, 4, 2, 2}</h3>
+<div class="step successful">Given the number of <span class="step parameter">12</span></div>
+<div class="step successful">When the number of rabbits are estimated</div>
+<div class="step successful">And the list is sorted in descending order</div>
+<div class="step successful">Then the number of rabbits for each month will be <span class="step parameter">288, 178, 110, 68, 42, 26, 16, 10, 6, 4, 2, 2</span></div>
+
+<h3 class="example">Example: {months=13, expected=466, 288, 178, 110, 68, 42, 26, 16, 10, 6, 4, 2, 2}</h3>
+<div class="step successful">Given the number of <span class="step parameter">13</span></div>
+<div class="step successful">When the number of rabbits are estimated</div>
+<div class="step successful">And the list is sorted in descending order</div>
+<div class="step successful">Then the number of rabbits for each month will be <span class="step parameter">466, 288, 178, 110, 68, 42, 26, 16, 10, 6, 4, 2, 2</span></div>
+</div>
+</div>
+</div>
+
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

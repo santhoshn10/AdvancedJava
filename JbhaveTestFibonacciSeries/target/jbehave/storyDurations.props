@@ -1,0 +1,6 @@
+#org.jbehave.core.embedder.StoryManager
+#Thu Oct 12 03:24:39 CDT 2017
+threads=1
+total=0
+com/estimate-rabbits.story=0
+threadAverage=0
